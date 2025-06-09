@@ -16,6 +16,7 @@ st.write("Fits are ordered by skill points and investment required to fly them. 
 st.write("""The recommended progression for a fresh character is as follows: \n
         Drake -> Gila -> Praxis -> Tengu -> Maurader
          """)
+
 fit_option = st.radio(
     "Select fit type to display:",
     ("Alpha", "Omega", "Alpha & Omega"),
@@ -121,3 +122,20 @@ if fit_option == "Omega" or fit_option == "Alpha & Omega":
             Nova Fury Light Missile x1000
             Scourge Fury Light Missile x1000
         """, language="markdown")
+
+st.divider()
+st.header("Site layout and spawns")
+
+class_option = st.radio(
+    "Select fit type to display:",
+    ("C2", "C3", "C4", "C5"),
+    horizontal=True
+)
+
+if class_option == "C2":
+    with st.expander("Forgotten Perimeter Gateway"):
+        pass
+    with st.expander("Forgotten Perimeter Habitation Coils"):
+        pass
+    with st.expander("Perimeter Checkpoint"):
+        pass

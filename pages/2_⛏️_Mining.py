@@ -28,6 +28,7 @@ st.write("""
          """)
 
 st.success("We regularly do boosted mining fleets, please look out for announcements or ask in our internal chat channel **The Explorers Club** or on Discord.")
+st.info("If you would like to get started in manufacturing but don't know where to start, please ask in chat or discord for some BPCs from your fellow corpmates, we have a large library of blueprints available.")
 
 st.divider()
 
