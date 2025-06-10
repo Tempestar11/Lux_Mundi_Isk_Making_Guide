@@ -28,66 +28,200 @@ st.divider()
 st.info("**Note:** T1 and Faction scoops need minimal skill investment where as T2 scoops require level 4 Gas Harvesting skills.")
 with st.expander("T1 Scoop Venture"):
     st.write("Cheap gas huffing venture with T1 scoops, slowest but cheapest option, about 1 hour of huffing to fill up hold")
-    st.caption("T1 Venture - 10M ISK")
+    st.caption("T1 Venture - 15M ISK")
     st.code("""
-        [Venture, T1 Venture]
-        Mining Laser Upgrade I
-        Mining Laser Upgrade I
-        Mining Laser Upgrade I
-        Gas Cloud Harvester I
-        Gas Cloud Harvester I
-        Gas Cloud Harvester I
-        Medium EM Shield Reinforcer I
-        Medium Capacitor Control Circuit I
-        Medium Capacitor Control Circuit I
+        [Venture, Δ Gas Huffer T1]
+        Type-D Restrained Inertial Stabilizers
+
+        Medium Shield Extender I
+        Compact EM Shield Amplifier
+        5MN Y-T8 Compact Microwarpdrive
+
+        Gas Cloud Scoop I
+        Gas Cloud Scoop I
+        Core Probe Launcher I
+
+        Small Low Friction Nozzle Joints I
+        Small Low Friction Nozzle Joints I
+        Small Core Defense Field Extender I
+
+        Sisters Core Scanner Probe x8
+
     """, language="markdown")
 with st.expander("Faction Scoop Venture"):
     st.write("This is a very expensive ship with paper thin tank, but it has a faster gas cloud scoop and a higher yield. It is recommended for long-term use and for players who want to make the most out of gas huffing.")
-    st.caption("Faction Venture - 50M ISK")
+    st.caption("Faction Venture - 250M ISK")
     st.code("""
-        [Venture, Faction Venture]
-        Mining Laser Upgrade II
-        Mining Laser Upgrade II
-        Mining Laser Upgrade II
-        Syndicate Gas Cloud Harvester
-        Syndicate Gas Cloud Harvester
-        Syndicate Gas Cloud Harvester
-        Medium EM Shield Reinforcer II
-        Medium Capacitor Control Circuit II
-        Medium Capacitor Control Circuit II
+        [Venture, Δ Gas Huffer Faction]
+        Warp Core Stabilizer II
+
+        Medium Shield Extender II
+        EM Shield Amplifier II
+        5MN Quad LiF Restrained Microwarpdrive
+
+        Syndicate Gas Cloud Scoop
+        Syndicate Gas Cloud Scoop
+        Core Probe Launcher I
+
+        Small Low Friction Nozzle Joints I
+        Small Low Friction Nozzle Joints II
+        Small Core Defense Field Extender I
+            
+        Sisters Core Scanner Probe x8
+
     """, language="markdown")
 with st.expander("T2 Scoop Prospect"):
-    st.write("This is the best ship for gas huffing, it has a T2 gas cloud scoop and a high yield. .")
-    st.caption("T2 Prospect - 100M ISK")
+    st.write("This gives you the best bang for your buck. Slightly slower, but a lot cheaper to lose.")
+    st.caption("T2 Prospect - 70M ISK")
     st.code("""
-        [Prospect, T2 Prospect]
-        Mining Laser Upgrade II
-        Mining Laser Upgrade II
-        Mining Laser Upgrade II
-        Gas Cloud Harvester II
-        Gas Cloud Harvester II
-        Gas Cloud Harvester II
-        Medium EM Shield Reinforcer II
-        Medium Capacitor Control Circuit II
-        Medium Capacitor Control Circuit II
+        [Prospect, Δ Gas Huffer T2]
+        Warp Core Stabilizer II
+        Inertial Stabilizers II
+        Inertial Stabilizers II
+        Inertial Stabilizers II
+
+        Medium Shield Extender I
+        ML-3 Scoped Survey Scanner
+        5MN Y-T8 Compact Microwarpdrive
+
+        Gas Cloud Scoop II
+        Gas Cloud Scoop II
+        Covert Ops Cloaking Device II
+
+        Small Core Defense Field Extender II
+        Small Core Defense Field Extender II
+            
+        Core Scanner Probe I x8
+        Core Probe Launcher I x1
+        Mobile Depot x1
+
     """, language="markdown")
 with st.expander("Faction Scoop Prospect"):
-    st.write("This is the best ship for gas huffing, it has a Faction gas cloud scoop and a high yield. It is recommended for players who want to make the most out of gas huffing and have the skills to fly it.")
-    st.caption("Faction Prospect - 150M ISK")
+    st.write("This is the best ship for gas huffing, it has a Faction gas cloud scoop and a high yield. It is recommended for players who want to make the most out of gas huffing and have the skills to fly it. You'll earn this fit back in 2-3 hours of huffing.")
+    st.caption("Faction Prospect - 300M ISK")
     st.code("""
-        [Prospect, Faction Prospect]
-        Mining Laser Upgrade II
-        Mining Laser Upgrade II
-        Mining Laser Upgrade II
-        Syndicate Gas Cloud Harvester
-        Syndicate Gas Cloud Harvester
-        Syndicate Gas Cloud Harvester
-        Medium EM Shield Reinforcer II
-        Medium Capacitor Control Circuit II
-        Medium Capacitor Control Circuit II
+        [Prospect, Δ Gas Huffer Faction]
+        Warp Core Stabilizer II
+        Inertial Stabilizers II
+        Inertial Stabilizers II
+        Inertial Stabilizers II
+
+        Medium Shield Extender II
+        Survey Scanner I
+        5MN Y-T8 Compact Microwarpdrive
+
+        Syndicate Gas Cloud Scoop
+        Syndicate Gas Cloud Scoop
+        Covert Ops Cloaking Device II
+
+        Small Core Defense Field Extender II
+        Small Core Defense Field Extender II
+
+        Core Scanner Probe I x8
+        Core Probe Launcher I x1
+        Mobile Depot x1
+
     """, language="markdown")
 
 st.divider()
 st.header("Gas sites")
 st.subheader("There are 9 types of gas sites available in wormholes")
-st.write("The gas sites you need to look out for are Ordinary Perimeter Reservoir, they contain turrets that will kill any frigate in one shot. Other gas sites are not as dangerous, with rats spawning around 15 seconds after initial warpin.")
+st.write("The gas sites you need to look out for are **Ordinary Perimeter Reservoir**, they contain turrets that will kill any frigate in one shot. Other gas sites are not as dangerous, with rats spawning around 15 minutes after initial warpin.")
+
+site_choice = st.selectbox("Select a gas site", (
+    "Barren Perimeter Reservoir",
+    "Token Perimeter Reservoir",
+    "Minor Perimeter Reservoir",
+    "Ordinary Perimeter Reservoir",
+    "Sizeable Perimeter Reservoir",
+    "Bountiful Frontier Reservoir",
+    "Vast Frontier Reservoir",
+    "Vital Core Reservoir",
+    "Instrumental Core Reservoir"
+))
+
+if site_choice == "Barren Perimeter Reservoir":
+    st.caption("Barren Perimeter Reservoir - 1.5 Prospect loads")
+    gas_data = {
+        "Gas Type": ["C50", "C60"],
+        "Quantity (m3)": ["12,000", "6,000"],
+        "Units": ["12,000", "6,000"],
+    }
+    
+    df = pd.DataFrame(gas_data)
+    st.dataframe(df, hide_index=True)
+elif site_choice == "Token Perimeter Reservoir":
+        st.caption("Token Perimeter Reservoir - 1.5 Prospect loads")
+        gas_data = {
+            "Gas Type": ["C60", "C70"],
+            "Quantity (m3)": ["12,000", "6,000"],
+            "Units": ["12,000", "6,000"],
+        }
+        df = pd.DataFrame(gas_data)
+        st.dataframe(df, hide_index=True)
+elif site_choice == "Minor Perimeter Reservoir":
+        st.caption("Minor Perimeter Reservoir - 1.5 Prospect loads")
+        gas_data = {
+            "Gas Type": ["C70", "C72"],
+            "Quantity (m3)": ["12,000", "6,000"],
+            "Units": ["12,000", "6,000"],
+        }
+        df = pd.DataFrame(gas_data)
+        st.dataframe(df, hide_index=True)   
+elif site_choice == "Ordinary Perimeter Reservoir":
+        st.error("DO NOT warp if you are not sure the site is clear of turrets")
+        st.caption("Ordinary Perimeter Reservoir - 1.5 Prospect loads")
+        gas_data = {
+            "Gas Type": ["C72", "C84"],
+            "Quantity (m3)": ["12,000", "6,000"],
+            "Units": ["12,000", "6,000"],
+        }
+        df = pd.DataFrame(gas_data)
+        st.dataframe(df, hide_index=True)
+elif site_choice == "Sizeable Perimeter Reservoir":
+        st.caption("Sizeable Perimeter Reservoir - 3.5 Prospect loads")
+        gas_data = {
+            "Gas Type": ["C50", "C84"],
+            "Quantity (m3)": ["6,000", "24,000"],
+            "Units": ["6,000", "12,000"],
+        }
+        df = pd.DataFrame(gas_data)
+        st.dataframe(df, hide_index=True)
+elif site_choice == "Bountiful Perimeter Reservoir":
+        st.caption("Sizeable Perimeter Reservoir - 5 Prospect loads")
+        gas_data = {
+            "Gas Type": ["C28", "C32"],
+            "Quantity (m3)": ["40,000", "20,000"],
+            "Units": ["20,000", "4,000"],
+        }
+        df = pd.DataFrame(gas_data)
+        st.dataframe(df, hide_index=True)
+elif site_choice == "Vast Perimeter Reservoir":
+        st.caption("Sizeable Perimeter Reservoir - 9 Prospect loads")
+        gas_data = {
+            "Gas Type": ["C28", "C32"],
+            "Quantity (m3)": ["8,000", "100,000"],
+            "Units": ["4,000", "20,000"],
+        }
+        df = pd.DataFrame(gas_data)
+        st.dataframe(df, hide_index=True)
+elif site_choice == "Vital Core Reservoir":
+        st.error("Found in C5 and above wormholes, these sites contain rats that are very dangerous. Make sure to have someone expereiced to huff with.")
+        st.caption("Vital Core Reservoir - 20.8 Prospect loads")
+        gas_data = {
+            "Gas Type": ["C320", "C540"],
+            "Quantity (m3)": ["10,000", "240,000"],
+            "Units": ["2,000", "24,000"],
+        }
+        df = pd.DataFrame(gas_data)
+        st.dataframe(df, hide_index=True)
+elif site_choice == "Instrumental Core Reservoir":
+        st.error("Found in C5 and above wormholes, these sites contain rats that are very dangerous. Make sure to have someone expereiced to huff with.")
+        st.caption("Instrumental Core Reservoir - 20.8 Prospect loads")
+        gas_data = {
+            "Gas Type": ["C320", "C540"],
+            "Quantity (m3)": ["120,000", "20,000"],
+            "Units": ["24,000", "2,000"],
+        }
+        df = pd.DataFrame(gas_data)
+        st.dataframe(df, hide_index=True)
