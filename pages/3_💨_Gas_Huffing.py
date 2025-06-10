@@ -26,7 +26,7 @@ st.info("**Note:** New gas huffers should find an experienced corpmate to huff t
 st.divider()
 
 st.info("**Note:** T1 and Faction scoops need minimal skill investment where as T2 scoops require level 4 Gas Harvesting skills.")
-with st.expander("T1 Scoop Venture"):
+with st.expander("T1 Scoop Venture (Alpha)"):
     st.write("Cheap gas huffing venture with T1 scoops, slowest but cheapest option, about 1 hour of huffing to fill up hold")
     st.caption("T1 Venture - 15M ISK")
     st.code("""
@@ -48,7 +48,7 @@ with st.expander("T1 Scoop Venture"):
         Sisters Core Scanner Probe x8
 
     """, language="markdown")
-with st.expander("Faction Scoop Venture"):
+with st.expander("Faction Scoop Venture (Alpha)"):
     st.write("This is a very expensive ship with paper thin tank, but it has a faster gas cloud scoop and a higher yield. It is recommended for long-term use and for players who want to make the most out of gas huffing.")
     st.caption("Faction Venture - 250M ISK")
     st.code("""
@@ -70,7 +70,7 @@ with st.expander("Faction Scoop Venture"):
         Sisters Core Scanner Probe x8
 
     """, language="markdown")
-with st.expander("T2 Scoop Prospect"):
+with st.expander("T2 Scoop Prospect (Omega)"):
     st.write("This gives you the best bang for your buck. Slightly slower, but a lot cheaper to lose.")
     st.caption("T2 Prospect - 70M ISK")
     st.code("""
@@ -96,7 +96,7 @@ with st.expander("T2 Scoop Prospect"):
         Mobile Depot x1
 
     """, language="markdown")
-with st.expander("Faction Scoop Prospect"):
+with st.expander("Faction Scoop Prospect (Omega)"):
     st.write("This is the best ship for gas huffing, it has a Faction gas cloud scoop and a high yield. It is recommended for players who want to make the most out of gas huffing and have the skills to fly it. You'll earn this fit back in 2-3 hours of huffing.")
     st.caption("Faction Prospect - 300M ISK")
     st.code("""

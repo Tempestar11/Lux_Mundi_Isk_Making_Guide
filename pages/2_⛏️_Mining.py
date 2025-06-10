@@ -32,6 +32,56 @@ st.info("If you would like to get started in manufacturing but don't know where 
 
 st.divider()
 
+st.subheader("Mining ships")
+with st.expander("Venture T2 Miner (Alpha)"):
+    st.write("The Venture is the best most basic ship for mining, with a small ore hold. It is also very cheap to replace, making it a great choice for new players.")
+    st.code("""
+                [Venture, Δ T2 Miner]
+                Mining Laser Upgrade II
+
+                ML-3 Scoped Survey Scanner
+                Medium Shield Extender I
+                5MN Y-T8 Compact Microwarpdrive
+
+                Miner II
+                Miner II
+                Core Probe Launcher I
+
+                Small Core Defense Field Extender I
+                Small Low Friction Nozzle Joints I
+                Small Low Friction Nozzle Joints I
+
+                Hobgoblin I x2
+
+                Core Scanner Probe I x8
+                """, language="markdown")
+with st.expander("Retriever T1 Miner (Omega)"):
+    st.write("The retriever is our go to mining barge, balancing between ore hold size, tank, and mining yield.")
+    st.code("""
+                [Retriever, Δ Retriever Miner]
+                Damage Control II
+                Mining Laser Upgrade II
+                Mining Laser Upgrade II
+
+                10MN Y-S8 Compact Afterburner
+                Compact Thermal Shield Hardener
+
+                Strip Miner I
+                Strip Miner I
+
+                Medium Transverse Bulkhead I
+                Medium Transverse Bulkhead I
+                Medium Transverse Bulkhead I
+
+                Acolyte I x5
+                Hobgoblin I x5
+                """, language="markdown")
+    st.info("Upgrade to T2 Strip Miners when you can, however they mining crystals are very skill intensive")
+
+
+
+st.divider()
+
 belt_choice = st.selectbox("Select an ore belt",("Ordinary Perimeter Deposit", "Common Perimeter Deposit", "Unexceptional Frontier Deposit", "Uncommon Core Deposit", "Average Frontier Deposit"))
 
 if belt_choice == "Ordinary Perimeter Deposit":
