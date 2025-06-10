@@ -18,7 +18,7 @@ st.markdown("""To gas huff, you need a mining frigate, we DO NOT recommend using
 st.info("**Note:** We do not recommend fitting a T1 scoop if avoidable due to it being too slow at harvesting.")
 st.markdown("""
             T2 scoops are the cheaper option out of the fast scoops, however they have a significant residue chance. Meanwhile faction scoops are the fastest with 0 residue but they are also the most expensive option.
-            The choice of scoop depends on your budget and the amount of gas you plan to harvest. If you see yourself doing gas huffing sparingly and more, Faction scoops are your go to. Few good hauls of gas will pay for the scoop. 
+            The choice of scoop depends on your budget and the amount of gas you plan to harvest. If you see yourself doing gas huffing sparingly and more, faction scoops are your go to. Few good hauls of gas will pay for the scoop. 
 """)
 
 st.info("**Note:** New gas huffers should find an experienced corpmate to huff together as rat spawn times can be unpredictable and you may need help with the rats.")
