@@ -11,7 +11,7 @@ st.write("If you think this is just some nice AFK isk, dont. You're better off h
 
 st.divider()
 st.subheader("Why should I mine ores?")
-st.write("Mining in EVE was never a great way to make isk, espeically trying to plex your account. It is more of a side activity to supplement your industry production chain, building up margins to your product. **BUT** remember, just because mined it doesn't mean its free.")
+st.write("Mining in EVE was never a great way to make isk, espeically trying to plex your account. It is more of a side activity to supplement your industry production chain, building up margins to your product. **BUT** remember, just because you mined it doesn't mean its free.")
 st.subheader("What ores and minerals can I mine?")
 st.write(
     """
