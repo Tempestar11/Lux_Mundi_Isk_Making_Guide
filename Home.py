@@ -41,7 +41,7 @@ col7, col8 = st.columns(2)
 col7.info("""To find our wormhole HQ you need access to our corporation bookmarks folder via corp MOTD:""")
 col8.info("""We use the tool **Pathfinder** to map our way around J-space. If you are unsure how to use Pathfinder, please ask and we will be happy to help (there are also guides in Discord).  
           
-Pathfinder will show you our current connections to High sec and where you can enter our home (The Dog Pound AKA J231837).
+Pathfinder will show you our current connections to High sec and where you can enter our home (The Dog Pound).
 [Open Pathfinder](http://map.battlestar.space/map/MjM0Mw%3D%3D#)""")
 
 st.caption("Once you reached the current HS system, Look for '0 DP' for the entrance bookmark. This is easiest if you scroll to the top of your locations window and expand the 'Location in system' folder")
