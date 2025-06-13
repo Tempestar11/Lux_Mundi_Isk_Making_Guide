@@ -570,4 +570,5 @@ with st.expander("ECM Kitsune"):
         Gravimetric ECM II x4
         Ladar ECM II x4
         Multispectral ECM II x4
+        Mobile Depot
     """, language="markdown")
