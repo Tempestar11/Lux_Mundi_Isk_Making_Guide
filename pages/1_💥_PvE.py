@@ -12,7 +12,7 @@ st.divider()
 st.subheader("What is PvE in Wormholes?")
 st.write("This is some of the best money in the game. You are essentially completing waves of NPCs for dropped loot, which goes into building T3Cs or sold to NPC stations for a fixed price. DP is a C2 wormhole, with HS and C3 static connections. We will be focusing on C2 and C3 combat sites as they are more accessible while maintaining a good income.")
 st.subheader("Ship progression")
-st.write("Fits are ordered by skill points and investment required to fly them. The more SP you have, the more expensive your ship can be, and the more damage you can do. The fits are designed to be used in C2 and C3 sites, with some being Omega only due to skill requirements.")
+st.write("Fits are ordered by clear time(isk/hr). The more SP you have, the more expensive your ship can be, and the more damage you can do. The fits are designed to be used in C2 and C3 sites, with some being Omega only due to skill requirements.")
 st.write("""The recommended progression for a fresh character is as follows: \n
         Drake -> Gila -> Praxis -> Tengu -> Maurader
          """)

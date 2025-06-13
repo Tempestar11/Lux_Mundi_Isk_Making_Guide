@@ -465,3 +465,109 @@ with st.expander("Logi Rodiva"):
         Navy Cap Booster 800 x11
         Targeting Range Dampening Script x1
     """, language="markdown")
+
+st.divider()
+st.header("Mosquito Doctrine")
+st.caption("This fleet is a sniping doctrine, using the long range of the Jackdaw and speed, hence Mosquito. While kiting can be achieved, it is not recommended.")
+st.write("Command Links")
+with st.expander("Command Jackdaw"):
+    st.caption("Command Stork - 175M ISK")
+    st.code("""
+        [Stork, Mosquitos - Infolinks]
+        Damage Control II
+        Co-Processor II
+
+        Micro Jump Field Generator
+        5MN Quad LiF Restrained Microwarpdrive
+        Caldari Navy Medium Shield Extender
+        EM Shield Amplifier II
+        Initiated Compact Warp Disruptor
+        Target Painter II
+
+        Information Command Burst II
+        Information Command Burst II
+        Information Command Burst II
+
+        Small Command Processor I
+        Small Command Processor I
+
+        Sensor Optimization Charge x300
+        Electronic Superiority Charge x300
+        Electronic Hardening Charge x300
+        Information Command Mindlink x1
+    """, language="markdown")
+
+st.write("DPS Ships")
+with st.expander("DPS"):
+    st.caption("Jackdaw - 155M ISK")
+    st.info("Swap for T1 as needed")
+    st.code("""
+        [Jackdaw, *Mosquitos - DPS]
+        Nanofiber Internal Structure II
+        Ballistic Control System II
+        Ballistic Control System II
+
+        5MN Quad LiF Restrained Microwarpdrive
+        Missile Guidance Computer II
+        Pithum C-Type EM Shield Amplifier
+        Phased Muon Scoped Sensor Dampener
+        Republic Fleet Medium Shield Extender
+
+        Light Missile Launcher II
+        Light Missile Launcher II
+        Light Missile Launcher II
+        Light Missile Launcher II
+        Light Missile Launcher II
+
+        Small Polycarbon Engine Housing I
+        Small Hydraulic Bay Thrusters II
+        Small Rocket Fuel Cache Partition II
+
+        Scourge Fury Light Missile x795
+        Nova Fury Light Missile x795
+        Missile Range Script x1
+        Inferno Fury Light Missile x795
+        Mjolnir Fury Light Missile x795
+        Targeting Range Dampening Script x1
+        Synth Crash Booster x1
+        Agency 'Pyrolancea' DB5 Dose II x1
+    """, language="markdown")
+
+st.write("Ewar/Logi Ships")
+with st.expander("Painter Hyena"):
+    st.caption("Ewar Hyena - 40M ISK")
+    st.code("""
+        [Hyena, Mosquitos - Paint/web support]
+        Damage Control II
+        Signal Amplifier II
+        Signal Amplifier II
+
+        Stasis Webifier II
+        5MN Y-T8 Compact Microwarpdrive
+        Medium Shield Extender II
+        Target Painter II
+
+        Small Particle Dispersion Projector I
+        Small Capacitor Control Circuit I
+    """, language="markdown")
+with st.expander("ECM Kitsune"):
+    st.caption("ECM Kitsune - 90M ISK")
+    st.code("""
+        [Kitsune, Mosquitos - ECM]
+        Signal Distortion Amplifier II
+        Signal Distortion Amplifier II
+
+        5MN Quad LiF Restrained Microwarpdrive
+        Radar ECM II
+        Radar ECM II
+        Radar ECM II
+        Radar ECM II
+
+        Small Ionic Field Projector II
+        Small Low Friction Nozzle Joints II
+
+        Magnetometric ECM II x4
+        Gravimetric ECM II x4
+        Ladar ECM II x4
+        Multispectral ECM II x4
+    """, language="markdown")
