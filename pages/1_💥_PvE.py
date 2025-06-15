@@ -16,7 +16,7 @@ st.write("This is some of the best money in the game. You are essentially comple
 st.subheader("Ship progression")
 st.write("Fits are ordered by clear time(isk/hr). The more SP you have, the more expensive your ship can be, and the more damage you can do. The fits are designed to be used in C2 and C3 sites, with some being Omega only due to skill requirements.")
 st.write("""The recommended progression for a fresh character is as follows: \n
-        Drake -> Gila -> Praxis -> Tengu -> Maurader
+        Drake(C2) -> Gila(C2/C3) -> Praxis(C3) -> Tengu(C3) -> Maurader(C3+)
          """)
 
 fit_option = st.radio(
