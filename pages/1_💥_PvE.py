@@ -126,16 +126,91 @@ if fit_option == "Omega" or fit_option == "Alpha & Omega":
 st.divider()
 st.header("Site layout and spawns")
 
-class_option = st.radio(
+class_option = st.pills(
     "Select fit type to display:",
     ("C2", "C3", "C4", "C5"),
-    horizontal=True
-)
+    label_visibility="collapsed")
 
 if class_option == "C2":
-    with st.expander("Forgotten Perimeter Gateway"):
-        pass
-    with st.expander("Forgotten Perimeter Habitation Coils"):
-        pass
+    st.caption("Combat sites")
     with st.expander("Perimeter Checkpoint"):
-        pass
+        st.write("[PH]")
+    with st.expander("Perimeter Hangar"):
+        st.write("[PH]")
+    with st.expander("Sleeper Data Signature Sanctuary"):
+        st.write("[PH]")
+    with st.expander("The Ruins of Enclave Cohort 27"):
+        st.write("[PH]")
+    st.caption("Relic sites")
+    with st.expander("Forgotten Perimeter Gateway"):
+        st.write("[PH]")
+    with st.expander("Forgotten Perimeter Habitation Coils"):
+        st.write("[PH]")
+    st.caption("Data sites")
+    with st.expander("Unsecured Perimeter Comms Relay"):
+        st.write("[PH]")
+    with st.expander("Unsecured Perimeter Transponder Farm"):
+        st.write("[PH]")
+
+elif class_option == "C3":
+    st.caption("Combat sites")
+    with st.expander("Fortification Frontier Stronghold"):
+        st.write("[PH]")
+    with st.expander("Outpost Frontier Stronghold"):
+        st.write("[PH]")
+    with st.expander("Solar Cell"):
+        st.write("[PH]")
+    with st.expander("The Oruze Construct"):
+        st.write("[PH]")
+    st.caption("Relic sites")
+    with st.expander("Forgotten Frontier Quarantine Outpost"):
+        st.write("[PH]")
+    with st.expander("Forgotten Frontier Recursive Depot"):
+        st.write("[PH]")
+    st.caption("Data sites")
+    with st.expander("Unsecured Frontier Database"):
+        st.write("[PH]")
+    with st.expander("Unsecured Frontier Reciever"):
+        st.write("[PH]")
+
+elif class_option == "C4":
+    st.caption("Combat sites")
+    with st.expander("Frontier Barracks"):
+        st.write("[PH]")
+    with st.expander("Frontier Command Post"):
+        st.write("[PH]")
+    with st.expander("Integrated Terminus"):
+        st.write("[PH]")
+    with st.expander("Sleeper Information Sanctum"):
+        st.write("[PH]")
+    st.caption("Relic sites")
+    with st.expander("Forgotten Frontier Conversion Module"):
+        st.write("[PH]")
+    with st.expander("Forgotten Frontier Evacuation Center"):
+        st.write("[PH]")
+    st.caption("Data sites")
+    with st.expander("Unsecured Frontier Digital Nexus"):
+        st.write("[PH]")
+    with st.expander("Unsecured Frontier Trinary Hub"):
+        st.write("[PH]")
+
+elif class_option == "C5":
+    st.caption("Combat sites")
+    with st.expander("Core Garrison"):
+        st.write("[PH]")
+    with st.expander("Core Stronghold"):
+        st.write("[PH]")
+    with st.expander("Oruze Osobnyk"):
+        st.write("[PH]")
+    with st.expander("Quarantine Area"):
+        st.write("[PH]")
+    st.caption("Relic sites")
+    with st.expander("Forgotten Core Data Field"):
+        st.write("[PH]")
+    with st.expander("Forgotten Core Information Pen"):
+        st.write("[PH]")
+    st.caption("Data sites")
+    with st.expander("Unsecured Frontier Enclave Relay"):
+        st.write("[PH]")
+    with st.expander("Unsecured Frontier Server Bank"):
+        st.write("[PH]")
