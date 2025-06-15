@@ -469,6 +469,7 @@ with st.expander("Logi Rodiva"):
 st.divider()
 st.header("Mosquito Doctrine")
 st.caption("This fleet is a sniping doctrine, using the long range of the Jackdaw and speed, hence Mosquito. While kiting can be achieved, it is not recommended.")
+st.info("Additional tackle or interdictor ships are recommended to fly with this fleet.")
 st.write("Command Links")
 with st.expander("Command Jackdaw"):
     st.caption("Command Stork - 175M ISK")
