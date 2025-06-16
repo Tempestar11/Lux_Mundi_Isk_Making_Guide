@@ -159,7 +159,7 @@ elif class_option == "C3":
     with st.expander("Fortification Frontier Stronghold"):
         st.image('combat_sites/C3/fortification_frontier_stronghold.png', caption="Fortification Frontier Stronghold")
     with st.expander("Outpost Frontier Stronghold"):
-        st.image('combat_sites/C3/outpost_frontier_stronghold.png', caption="Outpost Frontier Stronghold")
+        st.image('combat_sites/C3/outpost_frontier_stronghold_2.png', caption="Outpost Frontier Stronghold")
     with st.expander("Solar Cell"):
         st.image('combat_sites/C3/solar_cell.png', caption="Solar Cell")
     with st.expander("The Oruze Construct"):
