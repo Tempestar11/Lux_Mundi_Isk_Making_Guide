@@ -118,13 +118,8 @@ if planet_choice == "Gas":
             )
         with st.expander("Oxygen P1 Extractor + Factory"):
             st.caption("Oxygen P1 Extractor + Factory")
-            st.code("""[PH]""", language="plaintext")
-            st.download_button(
-                label="Download P1 Extractor + Factory",
-                data="https://example.com/oxygen_p1_factory.pi",
-                file_name="oxygen_p1_factory.pi",
-                mime="application/octet-stream"
-            )
+            st.code("""{"CmdCtrLv": 4, "Cmt": "Gas - Oxygen - E2 F4", "Diam": 193520.0, "L": [{"D": 7, "Lv": 0, "S": 6}, {"D": 1, "Lv": 0, "S": 3}, {"D": 8, "Lv": 0, "S": 6}, {"D": 6, "Lv": 0, "S": 3}, {"D": 4, "Lv": 0, "S": 6}, {"D": 6, "Lv": 0, "S": 5}, {"D": 6, "Lv": 0, "S": 2}], "P": [{"H": 0, "La": 0.9158, "Lo": 3.11935, "S": null, "T": 2536}, {"H": 0, "La": 0.94803, "Lo": 3.11175, "S": 3683, "T": 2492}, {"H": 0, "La": 0.92623, "Lo": 3.12689, "S": 3683, "T": 2492}, {"H": 0, "La": 0.9367, "Lo": 3.10426, "S": null, "T": 3060}, {"H": 0, "La": 0.92629, "Lo": 3.11175, "S": 3683, "T": 2492}, {"H": 0, "La": 0.93709, "Lo": 3.12025, "S": null, "T": 2543}, {"H": 10, "La": 0.93728, "Lo": 3.13522, "S": 2310, "T": 3060}, {"H": 0, "La": 0.9478, "Lo": 3.127, "S": 3683, "T": 2492}], "Pln": 13, "R": [{"P": [3, 6], "Q": 20, "T": 3683}, {"P": [5, 6], "Q": 20, "T": 3683}, {"P": [8, 6], "Q": 20, "T": 3683}, {"P": [2, 6], "Q": 20, "T": 3683}, {"P": [1, 3], "Q": 3000, "T": 2310}, {"P": [1, 3, 6, 5], "Q": 3000, "T": 2310}, {"P": [1, 3, 6, 8], "Q": 3000, "T": 2310}, {"P": [1, 3, 6, 2], "Q": 3000, "T": 2310}, {"P": [7, 6, 3, 1], "Q": 60940, "T": 2310}]}""", language="plaintext", wrap_lines=True)
+
     elif selection == "Oxidising Compound":
         with st.expander("Oxidising Compound P0 extractor"):
             st.code("""[PH]""", language="plaintext")
@@ -176,13 +171,8 @@ elif planet_choice == "Ice":
             )
         with st.expander("Water P1 Extractor + Factory"):
             st.caption("Water P1 Extractor + Factory")
-            st.code("""[PH]""", language="plaintext")
-            st.download_button(
-                label="Download P1 Extractor + Factory",
-                data="https://example.com/water_p1_factory.pi",
-                file_name="water_p1_factory.pi",
-                mime="application/octet-stream"
-            )
+            st.code("""{"CmdCtrLv": 4, "Cmt": "Ice - Water - E2 F4", "Diam": 52280.0, "L": [{"D": 2, "Lv": 0, "S": 6}, {"D": 5, "Lv": 0, "S": 2}, {"D": 4, "Lv": 0, "S": 7}, {"D": 2, "Lv": 0, "S": 8}, {"D": 2, "Lv": 0, "S": 7}, {"D": 2, "Lv": 0, "S": 1}, {"D": 3, "Lv": 0, "S": 2}], "P": [{"H": 0, "La": 0.48728, "Lo": 6.23779, "S": 3645, "T": 2493}, {"H": 0, "La": 0.49794, "Lo": 6.22587, "S": null, "T": 2552}, {"H": 2, "La": 0.49876, "Lo": 6.25096, "S": 2268, "T": 3061}, {"H": 0, "La": 0.47674, "Lo": 6.22501, "S": null, "T": 2257}, {"H": 10, "La": 0.49801, "Lo": 6.2007, "S": 2268, "T": 3061}, {"H": 0, "La": 0.50896, "Lo": 6.23632, "S": 3645, "T": 2493}, {"H": 0, "La": 0.48724, "Lo": 6.212, "S": 3645, "T": 2493}, {"H": 0, "La": 0.50891, "Lo": 6.21158, "S": 3645, "T": 2493}], "Pln": 12, "R": [{"P": [8, 2], "Q": 20, "T": 3645}, {"P": [6, 2], "Q": 20, "T": 3645}, {"P": [7, 2], "Q": 20, "T": 3645}, {"P": [1, 2], "Q": 20, "T": 3645}, {"P": [4, 7], "Q": 3000, "T": 2268}, {"P": [4, 7, 2, 1], "Q": 3000, "T": 2268}, {"P": [4, 7, 2, 8], "Q": 3000, "T": 2268}, {"P": [4, 7, 2, 6], "Q": 3000, "T": 2268}, {"P": [3, 2, 7, 4], "Q": 18012, "T": 2268}, {"P": [5, 2, 7, 4], "Q": 61776, "T": 2268}]}""", language="plaintext", wrap_lines=True)
+
     elif selection == "Toxic Metal":
         with st.expander("Toxic Metal P0 extractor"):
             st.code("""[PH]""", language="plaintext")
@@ -384,13 +374,8 @@ elif planet_choice == "Lava":
             )
         with st.expander("Chiral Structures P1 Extractor + Factory"):
             st.caption("Chiral Structures P1 Extractor + Factory")
-            st.code("""[PH]""", language="plaintext")
-            st.download_button(
-                label="Download P1 Extractor + Factory",
-                data="https://example.com/chiral_structures_p1_factory.pi",
-                file_name="chiral_structures_p1_factory.pi",
-                mime="application/octet-stream"
-            )
+            st.code("""{"CmdCtrLv": 4, "Cmt": "Lava - Chiral Structures - E2 F4", "Diam": 14640.0, "L": [{"D": 7, "Lv": 0, "S": 3}, {"D": 7, "Lv": 0, "S": 6}, {"D": 7, "Lv": 0, "S": 5}, {"D": 8, "Lv": 0, "S": 7}, {"D": 7, "Lv": 0, "S": 4}, {"D": 2, "Lv": 0, "S": 6}, {"D": 1, "Lv": 0, "S": 7}], "P": [{"H": 10, "La": 0.49959, "Lo": 3.28876, "S": 2306, "T": 3062}, {"H": 0, "La": 0.48394, "Lo": 3.25002, "S": null, "T": 2558}, {"H": 0, "La": 0.48552, "Lo": 3.31994, "S": 2401, "T": 2469}, {"H": 0, "La": 0.49194, "Lo": 3.26927, "S": 2401, "T": 2469}, {"H": 0, "La": 0.49714, "Lo": 3.31361, "S": 2401, "T": 2469}, {"H": 0, "La": 0.48014, "Lo": 3.27475, "S": 2401, "T": 2469}, {"H": 0, "La": 0.48787, "Lo": 3.29468, "S": null, "T": 2555}, {"H": 2, "La": 0.47632, "Lo": 3.30179, "S": 2306, "T": 3062}], "Pln": 2015, "R": [{"P": [3, 7], "Q": 20, "T": 2401}, {"P": [5, 7], "Q": 20, "T": 2401}, {"P": [6, 7], "Q": 20, "T": 2401}, {"P": [4, 7], "Q": 20, "T": 2401}, {"P": [2, 6], "Q": 3000, "T": 2306}, {"P": [2, 6, 7, 4], "Q": 3000, "T": 2306}, {"P": [2, 6, 7, 3], "Q": 3000, "T": 2306}, {"P": [2, 6, 7, 5], "Q": 3000, "T": 2306}, {"P": [8, 7, 6, 2], "Q": 16436, "T": 2306}, {"P": [1, 7, 6, 2], "Q": 63740, "T": 2306}]}""", language="plaintext", wrap_lines=True)
+
     elif selection == "Plasmoids":
         with st.expander("Plasmoids P0 extractor"):
             st.code("""[PH]""", language="plaintext")
@@ -484,13 +469,8 @@ elif planet_choice == "Oceanic":
             )
         with st.expander("Proteins P1 Extractor + Factory"):
             st.caption("Proteins P1 Extractor + Factory")
-            st.code("""[PH]""", language="plaintext")
-            st.download_button(
-                label="Download P1 Extractor + Factory",
-                data="https://example.com/proteins_p1_factory.pi",
-                file_name="proteins_p1_factory.pi",
-                mime="application/octet-stream"
-            )
+            st.code("""{"CmdCtrLv": 4, "Cmt": "Oceanic - Proteins - E2 F4", "Diam": 6460.0, "L": [{"D": 5, "Lv": 0, "S": 1}, {"D": 2, "Lv": 0, "S": 1}, {"D": 4, "Lv": 0, "S": 2}, {"D": 3, "Lv": 0, "S": 2}, {"D": 2, "Lv": 0, "S": 6}, {"D": 2, "Lv": 0, "S": 7}, {"D": 2, "Lv": 0, "S": 8}], "P": [{"H": 0, "La": 1.84993, "Lo": 1.62161, "S": 2395, "T": 2490}, {"H": 0, "La": 1.86143, "Lo": 1.61794, "S": null, "T": 2542}, {"H": 2, "La": 1.85978, "Lo": 1.63035, "S": 2287, "T": 3063}, {"H": 10, "La": 1.86341, "Lo": 1.60552, "S": 2287, "T": 3063}, {"H": 0, "La": 1.84058, "Lo": 1.61378, "S": null, "T": 2535}, {"H": 0, "La": 1.87124, "Lo": 1.62519, "S": 2395, "T": 2490}, {"H": 0, "La": 1.85191, "Lo": 1.6092, "S": 2395, "T": 2490}, {"H": 0, "La": 1.87333, "Lo": 1.61274, "S": 2395, "T": 2490}], "Pln": 2014, "R": [{"P": [7, 2], "Q": 20, "T": 2395}, {"P": [1, 2], "Q": 20, "T": 2395}, {"P": [8, 2], "Q": 20, "T": 2395}, {"P": [6, 2], "Q": 20, "T": 2395}, {"P": [4, 2, 1, 5], "Q": 46332, "T": 2287}, {"P": [3, 2, 1, 5], "Q": 12424, "T": 2287}, {"P": [5, 1, 2, 7], "Q": 3000, "T": 2287}, {"P": [5, 1], "Q": 3000, "T": 2287}, {"P": [5, 1, 2, 8], "Q": 3000, "T": 2287}, {"P": [5, 1, 2, 6], "Q": 3000, "T": 2287}]}""", language="plaintext", wrap_lines=True)
+
     elif selection == "Bacteria":
         with st.expander("Bacteria P0 extractor"):
             st.code("""[PH]""", language="plaintext")
