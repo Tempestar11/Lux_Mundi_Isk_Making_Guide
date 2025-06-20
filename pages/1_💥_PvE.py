@@ -124,6 +124,37 @@ if fit_option == "Omega" or fit_option == "Alpha & Omega":
             Nova Fury Light Missile x1000
             Scourge Fury Light Missile x1000
         """, language="markdown")
+    with st.expander("C3 Vagabond"):
+        st.caption("C3 Vagabond")
+        st.code("""
+            [Vagabond, Vagabond C3 PVE]
+            Assault Damage Control II
+            Gyrostabilizer II
+            Gyrostabilizer II
+            Capacitor Flux Coil II
+            Reactor Control Unit II
+
+            Dread Guristas Large Shield Booster
+            Republic Fleet Large Cap Battery
+            Multispectrum Shield Hardener II
+            10MN Afterburner II
+
+            425mm AutoCannon II
+            425mm AutoCannon II
+            425mm AutoCannon II
+            425mm AutoCannon II
+            425mm AutoCannon II
+            Core Probe Launcher II
+
+            Medium Core Defense Operational Solidifier II
+            Medium Semiconductor Memory Cell II
+                
+            Hobgoblin II x5
+
+            Barrage M x3500
+            Hail M x5100
+            Sisters Core Scanner Probe x8
+        """, language="markdown")
 
 st.divider()
 st.header("Site layout and spawns")
