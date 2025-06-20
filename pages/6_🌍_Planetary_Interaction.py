@@ -15,6 +15,8 @@ st.markdown("""
 Planetary Interaction (PI) is a feature in EVE Online that allows players to establish colonies on planets and extract resources. It involves setting up structures, managing resources, and optimizing production chains. PI can be a lucrative activity, especially for players who invest time in understanding the mechanics and optimizing their operations.""")
 st.write("There is too much to cover in this guide, so we will be linking a good playlist that covers everything you need to know about PI. Additionally, this page will store PI templates specifically for LUX and PI calculations")
 
+st.info("It is highly recommended for players who does not wish to engage fully with PI to grab one of the 'P1 Extractor + Factory' templates below and use corp buy back for passive income. ")
+
 st.video("https://www.youtube.com/watch?v=9lC-Cp8ymOY&list=PLXllDeIzDzd5t13rVjcTRpLxWEgzGVBmU")
 
 st.divider()
