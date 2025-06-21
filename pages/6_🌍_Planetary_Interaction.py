@@ -1,10 +1,14 @@
 import streamlit as st
 import pandas as pd
+from pi_products import PI_Products
 
 st.set_page_config(
     page_title="Planetary Interaction Guide",
     page_icon="🌍",
+    layout="wide",
 )
+
+st.sidebar.success("This page will only contain templates and PI calculations for commodities that are produced natively in Dog Pound")
 
 st.title("🌍 Planetary Interaction Guide")
 st.markdown("""It's a love-hate relationship honestly.""")
@@ -15,7 +19,7 @@ st.markdown("""
 Planetary Interaction (PI) is a feature in EVE Online that allows players to establish colonies on planets and extract resources. It involves setting up structures, managing resources, and optimizing production chains. PI can be a lucrative activity, especially for players who invest time in understanding the mechanics and optimizing their operations.""")
 st.write("There is too much to cover in this guide, so we will be linking a good playlist that covers everything you need to know about PI. Additionally, this page will store PI templates specifically for LUX and PI calculations")
 
-st.info("It is highly recommended for players who does not wish to engage fully with PI to grab one of the 'P1 Extractor + Factory' templates below and use corp buy back for passive income. ")
+st.info("It is highly recommended for players who do not wish to engage fully with PI to grab one of the 'P1 Extractor + Factory' templates below and use corp buy back for passive income. ")
 
 st.video("https://www.youtube.com/watch?v=9lC-Cp8ymOY&list=PLXllDeIzDzd5t13rVjcTRpLxWEgzGVBmU")
 
@@ -527,3 +531,120 @@ elif planet_choice == "Oceanic":
                 file_name="biomass_p1_factory.pi",
                 mime="application/octet-stream"
             )
+
+st.divider()
+
+st.header("PI calculator")
+st.subheader("Calculate your PI profits with the PI calculator.")
+options = ["P1", "P2", "P3"]
+tier = st.segmented_control("Select PI level", options)
+
+try:
+    selected_products = st.multiselect(
+        "Select product(s)",
+        list(PI_Products[tier].keys())
+    )
+
+    st.header("PI Output Calculator")
+
+    with st.expander("PI Output Calculator"):
+        st.markdown(
+            "Enter the number of **P1 Factories** you are running per P1 commodity . "
+            "Each P2 factory requires **2 P1 factory**. "
+            "This calculator will estimate your **P1, P2, or P3 output per hour** based on the standard PI cycle times."
+        )
+
+            # Updated PI rates (per EVE standard):
+        # Each P1 factory: 80 P1/hr, intakes 6000 P0/hr
+        # Each P2 factory: 10 P2/hr, requires 160 P1/hr input (from 2 P1 factories)
+        # Each P3 factory: 3 P3/hr, requires 10 P2/hr input (from 1 P2 factory)
+
+        P1_per_factory_per_hour = 80
+        P2_per_factory_per_hour = 10
+        P3_per_factory_per_hour = 3
+
+        # User enters number of P1 factories
+        num_p1_factories = st.number_input("Number of P1 factories", min_value=1, value=4)
+
+        # Calculate max number of P2 and P3 factories that can be fully fed
+        max_p2_factories = num_p1_factories // 2  # 2 P1 factories feed 1 P2
+        max_p3_factories = max_p2_factories // 1  # 1 P2 factory feeds 1 P3
+
+        P1_per_hour = int((num_p1_factories/2) * P1_per_factory_per_hour)
+        P2_per_hour = max_p2_factories * P2_per_factory_per_hour
+        P3_per_hour = max_p3_factories * P3_per_factory_per_hour
+
+        # Output for selected tier/product
+        if tier == "P1":
+            st.write(f"**P1 produced/Hr:** `{P1_per_hour}` units")
+        elif tier == "P2":
+            st.write(f"**P1 produced/Hr:** `{P1_per_hour}` units")
+            st.write(f"**P2 produced/Hr:** `{P2_per_hour}` units")
+            st.divider()
+            st.write(f"**P3 produced/Day:** `{P2_per_hour*24}` units")
+            st.write(f"**P3 produced/Month:** `{P2_per_hour*24*31}` units")
+        elif tier == "P3":
+            st.write(f"**P1 produced/Hr:** `{P1_per_hour}` units")
+            st.write(f"**P2 produced/Hr:** `{P2_per_hour}` units")
+            st.write(f"**P3 produced/Hr:** `{P3_per_hour}` units")
+            st.divider()
+            st.write(f"**P3 produced/Day:** `{P3_per_hour*24}` units")
+            st.write(f"**P3 produced/Month:** `{P3_per_hour*24*31}` units")
+        
+        st.success("Multiply the output by the ISK of the product to get your total profit.")
+
+        st.divider()
+        st.write(f"**Average P0 extracted/Hr to maintain efficiency** `{num_p1_factories * 6000}` units")
+        
+
+        col1, col2 = st.columns(2)
+
+        from graphviz import Digraph
+
+        def build_graph(tier, product, dot=None, parent=None):
+            """Recursively build a Graphviz Digraph for the PI breakdown."""
+            if dot is None:
+                dot = Digraph()
+                dot.attr(rankdir='LR', size='8,4')
+            node_label = f"{product}\n({tier})"
+            dot.node(node_label, shape="box", font_name="Helvetica", fontsize="12")
+            inputs = PI_Products[tier][product]["Input"]
+            for item, qty in inputs.items():
+                # Determine the correct tier for the child node
+                if tier == "P3":
+                    child_tier = "P2"
+                elif tier == "P2":
+                    child_tier = "P1"
+                elif tier == "P1":
+                    # If the item is in P0, label as P0, else as P1
+                    child_tier = "P0" if "P0" in PI_Products and item in PI_Products["P0"] else "P1"
+                else:
+                    child_tier = tier  # fallback
+
+                child_label = f"{item}\n({child_tier})"
+                dot.node(child_label, shape="box", font_name="Helvetica", fontsize="12")
+                dot.edge(child_label, node_label, label=f"x{qty}")
+
+                # Only go deeper if not at P0
+                if tier == "P3" and item in PI_Products["P2"]:
+                    build_graph("P2", item, dot, child_label)
+                elif tier == "P2" and item in PI_Products["P1"]:
+                    build_graph("P1", item, dot, child_label)
+                elif tier == "P1" and "P0" in PI_Products and item in PI_Products["P0"]:
+                    # Optionally, you can expand P0 if you want to show raw resource sources
+                    pass  # Usually P0 is the base, so stop here
+            return dot
+
+        st.markdown("#### PI Breakdown Flowchart")
+        if selected_products:
+            dot = Digraph()
+            dot.attr(rankdir='LR', size='20,4')
+            dot.attr(nodesep='0.5', ranksep='0.5')
+            for product in selected_products:
+                build_graph(tier, product, dot)
+            st.graphviz_chart(dot, use_container_width=True)
+        else:
+            st.info("Please select at least one product to see the flowchart.")
+
+except:
+    st.info("Please select a PI level to see the products.") 
