@@ -26,134 +26,185 @@ fit_option = st.radio(
 )
 
 if fit_option == "Alpha" or fit_option == "Alpha & Omega":
-    with st.expander("C2 Passive Tanked Drake"):
+    with st.expander("C2 Passive Drake (Starter)"):
         st.write("This is the first ship you will be able to fly, it is a passive tanked Drake with light missiles. The passive tank allows you to run the site without needing to manage your capacitor or worry about neut pressure, and the light missiles are a good choice for the DPS you can output.")
-        st.caption("Alpha C2 Passive Drake - 150M ISK")
+        st.caption("Alpha C2 Passive Drake - 70M ISK")
         st.code("""
             [Drake, C2 Passive Drake]
-            Imperial Navy Drone Damage Amplifier
-            Imperial Navy Drone Damage Amplifier
-            Imperial Navy Drone Damage Amplifier
-            Imperial Navy Drone Damage Amplifier
+            Shield Power Relay II
+            Power Diagnostic System I
+            Ballistic Control System II
+            Ballistic Control System II
+
             Large Shield Extender II
             Large Shield Extender II
+            Multispectrum Shield Hardener II
+            10MN Monopropellant Enduring Afterburner
+            EM Shield Amplifier II
             Large Shield Extender II
-            Large Shield Extender II
-            Rapid Light Missile Launcher II
-            Rapid Light Missile Launcher II
-            Rapid Light Missile Launcher II
-            Rapid Light Missile Launcher II
-            Medium EM Shield Reinforcer II
-            Medium Capacitor Control Circuit II
-            Medium Capacitor Control Circuit II
-            Hornet EC-300 x3
-            Inferno Fury Light Missile x1000
-            Nova Fury Light Missile x1000
-            Scourge Fury Light Missile x1000
+
+            Upgraded 'Malkuth' Heavy Assault Missile Launcher I
+            Upgraded 'Malkuth' Heavy Assault Missile Launcher I
+            Upgraded 'Malkuth' Heavy Assault Missile Launcher I
+            Upgraded 'Malkuth' Heavy Assault Missile Launcher I
+            Upgraded 'Malkuth' Heavy Assault Missile Launcher I
+            Upgraded 'Malkuth' Heavy Assault Missile Launcher I
+            Core Probe Launcher I
+
+            Medium Core Defense Field Purger II
+            Medium Core Defense Field Purger II
+            Medium Core Defense Field Purger II
+
+            Hobgoblin I x5
+
+            Caldari Navy Scourge Heavy Assault Missile x936
         """, language="markdown")
     
-    with st.expander("C2 Active Tanked Drake"):
-        st.caption("C2 Active Drake")
+    with st.expander("C2 Active Tanked Gnosis (Starter)"):
+        st.caption("C2 Active Tanked Gnosis")
         st.code("""
-            [Drake, C2 Active Drake]
-            Imperial Navy Drone Damage Amplifier
-            Imperial Navy Drone Damage Amplifier
-            Imperial Navy Drone Damage Amplifier
-            Large Shield Extender II
-            Large Shield Extender II
-            Large Shield Extender II
-            Large Shield Extender II
-            Rapid Light Missile Launcher II
-            Rapid Light Missile Launcher II
-            Rapid Light Missile Launcher II
-            Rapid Light Missile Launcher II
-            Medium EM Shield Reinforcer II
-            Medium Capacitor Control Circuit II
-            Medium Capacitor Control Circuit II
-            Hornet EC-300 x3
-            Inferno Fury Light Missile x1000
-            Nova Fury Light Missile x1000
-            Scourge Fury Light Missile x1000
+            [Gnosis, C2 Gnosis]
+            Ballistic Control System II
+            Capacitor Power Relay II
+            Capacitor Power Relay II
+            Capacitor Power Relay II
+            Capacitor Power Relay II
+            IFFA Compact Damage Control
+
+            10MN Monopropellant Enduring Afterburner
+            Multispectrum Shield Hardener II
+            Compact Multispectrum Shield Hardener
+            Large Compact Pb-Acid Cap Battery
+            Copasetic Compact Shield Boost Amplifier
+            X-Large C5-L Compact Shield Booster
+
+            Shield Command Burst I
+            Prototype 'Arbalest' Heavy Assault Missile Launcher I
+            Prototype 'Arbalest' Heavy Assault Missile Launcher I
+            Prototype 'Arbalest' Heavy Assault Missile Launcher I
+            Prototype 'Arbalest' Heavy Assault Missile Launcher I
+            Prototype 'Arbalest' Heavy Assault Missile Launcher I
+
+            Medium Core Defense Capacitor Safeguard I
+            Medium Processor Overclocking Unit I
+            Medium Processor Overclocking Unit I
+
+            Hobgoblin I x5
+            Hammerhead I x5
+
+            Caldari Navy Mjolnir Heavy Assault Missile x300
+            Shield Harmonizing Charge x300
         """, language="markdown")
 
 if fit_option == "Omega" or fit_option == "Alpha & Omega":
-    # Add code to display Omega fits here
-    with st.expander("C2 Passive Tanked Drake (Omega)"):
-        st.caption("C2 Passive Drake (Omega)")
+    with st.expander("C3 Tengu (Fort only)"):
+        st.caption("C3 Tengu (Fort only) - 550M ISK")
         st.code("""
-            [Drake, C2 Passive Drake (Omega)]
-            Imperial Navy Drone Damage Amplifier
-            Imperial Navy Drone Damage Amplifier
-            Imperial Navy Drone Damage Amplifier
-            Large Shield Extender II
-            Large Shield Extender II
-            Large Shield Extender II
-            Large Shield Extender II
-            Rapid Light Missile Launcher II
-            Rapid Light Missile Launcher II
-            Rapid Light Missile Launcher II
-            Rapid Light Missile Launcher II
-            Medium EM Shield Reinforcer II
-            Medium Capacitor Control Circuit II
-            Medium Capacitor Control Circuit II
-            Hornet EC-300 x3
-            Inferno Fury Light Missile x1000
-            Nova Fury Light Missile x1000
-            Scourge Fury Light Missile x1000
-        """, language="markdown")
-    with st.expander("C3 Tengu"):
-        st.caption("C3 Tengu")
-        st.code("""
-            [Tengu, C3 Tengu]
-            Imperial Navy Drone Damage Amplifier
-            Imperial Navy Drone Damage Amplifier
-            Imperial Navy Drone Damage Amplifier
-            Large Shield Extender II
-            Large Shield Extender II
-            Large Shield Extender II
-            Large Shield Extender II
-            Rapid Light Missile Launcher II
-            Rapid Light Missile Launcher II
-            Rapid Light Missile Launcher II
-            Rapid Light Missile Launcher II
-            Medium EM Shield Reinforcer II
-            Medium Capacitor Control Circuit II
-            Medium Capacitor Control Circuit II
-            Hornet EC-300 x3
-            Inferno Fury Light Missile x1000
-            Nova Fury Light Missile x1000
-            Scourge Fury Light Missile x1000
-        """, language="markdown")
-    with st.expander("C3 Vagabond"):
-        st.caption("C3 Vagabond")
-        st.code("""
-            [Vagabond, Vagabond C3 PVE]
-            Assault Damage Control II
-            Gyrostabilizer II
-            Gyrostabilizer II
-            Capacitor Flux Coil II
-            Reactor Control Unit II
+            [Tengu, C3 Tengu (Fort only)]
+            Ballistic Control System II
+            Ballistic Control System II
+            Ballistic Control System II
 
-            Dread Guristas Large Shield Booster
             Republic Fleet Large Cap Battery
             Multispectrum Shield Hardener II
-            10MN Afterburner II
+            Copasetic Compact Shield Boost Amplifier
+            Dread Guristas EM Shield Hardener
+            10MN Afterburner I
+            Dread Guristas Large Shield Booster
+            Target Painter II
 
-            425mm AutoCannon II
-            425mm AutoCannon II
-            425mm AutoCannon II
-            425mm AutoCannon II
-            425mm AutoCannon II
-            Core Probe Launcher II
+            Heavy Assault Missile Launcher II
+            Heavy Assault Missile Launcher II
+            Heavy Assault Missile Launcher II
+            Heavy Assault Missile Launcher II
+            Heavy Assault Missile Launcher II
+            Heavy Assault Missile Launcher II
 
-            Medium Core Defense Operational Solidifier II
-            Medium Semiconductor Memory Cell II
+            Medium Ancillary Current Router I
+            Medium EM Shield Reinforcer II
+            Medium Capacitor Control Circuit II
+
+            Tengu Core - Augmented Graviton Reactor
+            Tengu Defensive - Amplification Node
+            Tengu Offensive - Accelerated Ejection Bay
+            Tengu Propulsion - Fuel Catalyst
                 
-            Hobgoblin II x5
+            Nanite Repair Paste x200
+            Scourge Javelin Heavy Assault Missile x396
+            Scourge Rage Heavy Assault Missile x792
+        """, language="markdown")
 
-            Barrage M x3500
-            Hail M x5100
-            Sisters Core Scanner Probe x8
+    with st.expander("C3 Gila"):
+        st.caption("C3 Gila - 420M ISK")
+        st.code("""
+            [Gila, C3 Gila]
+            Shield Power Relay II
+            Shield Power Relay II
+            Drone Damage Amplifier II
+
+            Large Shield Extender II
+            Large Shield Extender II
+            Caldari Navy Large Shield Extender
+            Caldari Navy Large Shield Extender
+            Pithum C-Type EM Shield Amplifier
+            Pithum C-Type Thermal Shield Amplifier
+
+            Rapid Light Missile Launcher II
+            Rapid Light Missile Launcher II
+            Rapid Light Missile Launcher II
+            Rapid Light Missile Launcher II
+            Drone Link Augmentor I
+
+            Medium Core Defense Field Purger II
+            Medium Core Defense Field Purger II
+            Medium Core Defense Field Purger II
+
+            Caldari Navy Hornet x4
+            Imperial Navy Infiltrator x2
+            Caldari Navy Vespa x2
+            Federation Navy Hammerhead x2
+            Republic Fleet Valkyrie x2
+
+            Caldari Navy Scourge Light Missile x480
+        """, language="markdown")
+    
+    with st.expander("C3 Praxis"):
+        st.caption("C3 Praxis - 415M ISK")
+        st.code("""
+            [Praxis, C3 Praxis]
+            Drone Damage Amplifier II
+            Co-Processor I
+            Ballistic Control System II
+            Capacitor Flux Coil II
+            Capacitor Flux Coil II
+            Capacitor Flux Coil II
+            Capacitor Flux Coil II
+
+            Dread Guristas X-Large Shield Booster
+            Compact Multispectrum Shield Hardener
+            Compact Multispectrum Shield Hardener
+            Compact Multispectrum Shield Hardener
+            Copasetic Compact Shield Boost Amplifier
+            Copasetic Compact Shield Boost Amplifier
+            Copasetic Compact Shield Boost Amplifier
+
+            Rapid Heavy Missile Launcher II
+            Rapid Heavy Missile Launcher II
+            Rapid Heavy Missile Launcher II
+            Rapid Heavy Missile Launcher II
+            Rapid Heavy Missile Launcher II
+            Rapid Heavy Missile Launcher II
+            Drone Link Augmentor I
+
+            Large Capacitor Control Circuit II
+            Large Capacitor Control Circuit II
+            Large Capacitor Control Circuit I
+
+            Caldari Navy Hornet x10
+            Caldari Navy Vespa x10
+
+            Inferno Precision Heavy Missile x600
+            Inferno Fury Heavy Missile x750
         """, language="markdown")
 
 st.divider()
