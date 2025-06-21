@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import graphviz
 from pi_products import PI_Products
 
 st.set_page_config(
@@ -272,12 +273,10 @@ try:
 
         col1, col2 = st.columns(2)
 
-        from graphviz import Digraph
-
         def build_graph(tier, product, dot=None, parent=None):
             """Recursively build a Graphviz Digraph for the PI breakdown."""
             if dot is None:
-                dot = Digraph()
+                dot = graphviz.Digraph()
                 dot.attr(rankdir='LR', size='8,4')
             node_label = f"{product}\n({tier})"
             dot.node(node_label, shape="box", font_name="Helvetica", fontsize="12")
@@ -310,7 +309,7 @@ try:
 
         st.markdown("#### PI Breakdown Flowchart")
         if selected_products:
-            dot = Digraph()
+            dot = graphviz.Digraph()
             dot.attr(rankdir='LR', size='20,4')
             dot.attr(nodesep='0.5', ranksep='0.5')
             for product in selected_products:
