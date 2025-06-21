@@ -227,7 +227,7 @@ try:
             "This calculator will estimate your **P1, P2, or P3 output per hour** based on the standard PI cycle times."
         )
 
-            # Updated PI rates (per EVE standard):
+        # Updated PI rates (per EVE standard):
         # Each P1 factory: 80 P1/hr, intakes 6000 P0/hr
         # Each P2 factory: 10 P2/hr, requires 160 P1/hr input (from 2 P1 factories)
         # Each P3 factory: 3 P3/hr, requires 10 P2/hr input (from 1 P2 factory)
@@ -315,7 +315,7 @@ try:
             dot.attr(nodesep='0.5', ranksep='0.5')
             for product in selected_products:
                 build_graph(tier, product, dot)
-            st.graphviz_chart(dot, use_container_width=True)
+            st.graphviz_chart(dot.source, use_container_width=True)  # <-- use .source here
         else:
             st.info("Please select at least one product to see the flowchart.")
 
