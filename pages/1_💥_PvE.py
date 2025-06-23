@@ -218,15 +218,20 @@ class_option = st.pills(
 if class_option == "C2":
     st.caption("Combat sites")
     with st.expander("Perimeter Checkpoint"):
+        st.image('combat_sites/C2/1_Perimeter_Checkpoint_Layout.jpg')
         st.image('combat_sites/C2/1_perimeter_checkpoint.png', caption="Perimeter Checkpoint")
     with st.expander("Perimeter Hangar"):
+        st.image('combat_sites/C2/2_Perimeter_Hangar_Layout.jpg')
         st.image('combat_sites/C2/2_perimeter_hangar.png', caption="Perimeter Hangar")
     with st.expander("Sleeper Data Signature Sanctuary"):
+        st.image('combat_sites/C2/3_Sleeper_Data_Signature_Sanctuary_Layout.jpg')
         st.image('combat_sites/C2/3_sleeper_data_signature_sanctuary.png', caption="Sleeper Data Signature Sanctuary")
     with st.expander("The Ruins of Enclave Cohort 27"):
+        st.image('combat_sites/C2/4_The_Ruins_Of_Enclave_Cohort_27_Layout.jpg')
         st.image('combat_sites/C2/4_the_ruins_of_enclave_cohort_27.png', caption="The Ruins of Enclave Cohort 27")
     st.caption("Relic sites")
     with st.expander("Forgotten Perimeter Gateway"):
+        st.image('combat_sites/C2/5_Forgotten_Perimeter_Gateway_Layout.jpg')
         st.image('combat_sites/C2/5_forgotten_perimeter_gateway.png', caption="Forgotten Perimeter Gateway")
     with st.expander("Forgotten Perimeter Habitation Coils"):
         st.image('combat_sites/C2/6_forgotten_perimeter_habitation_coils.png', caption="Forgotten Perimeter Habitation Coils")
