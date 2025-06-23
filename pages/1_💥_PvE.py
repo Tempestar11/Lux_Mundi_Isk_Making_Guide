@@ -95,78 +95,6 @@ if fit_option == "Alpha" or fit_option == "Alpha & Omega":
             Caldari Navy Mjolnir Heavy Assault Missile x300
             Shield Harmonizing Charge x300
         """, language="markdown")
-
-if fit_option == "Omega" or fit_option == "Alpha & Omega":
-    with st.expander("C3 Tengu (Fort only)"):
-        st.caption("C3 Tengu (Fort only) - 550M ISK")
-        st.code("""
-            [Tengu, C3 Tengu (Fort only)]
-            Ballistic Control System II
-            Ballistic Control System II
-            Ballistic Control System II
-
-            Republic Fleet Large Cap Battery
-            Multispectrum Shield Hardener II
-            Copasetic Compact Shield Boost Amplifier
-            Dread Guristas EM Shield Hardener
-            10MN Afterburner I
-            Dread Guristas Large Shield Booster
-            Target Painter II
-
-            Heavy Assault Missile Launcher II
-            Heavy Assault Missile Launcher II
-            Heavy Assault Missile Launcher II
-            Heavy Assault Missile Launcher II
-            Heavy Assault Missile Launcher II
-            Heavy Assault Missile Launcher II
-
-            Medium Ancillary Current Router I
-            Medium EM Shield Reinforcer II
-            Medium Capacitor Control Circuit II
-
-            Tengu Core - Augmented Graviton Reactor
-            Tengu Defensive - Amplification Node
-            Tengu Offensive - Accelerated Ejection Bay
-            Tengu Propulsion - Fuel Catalyst
-                
-            Nanite Repair Paste x200
-            Scourge Javelin Heavy Assault Missile x396
-            Scourge Rage Heavy Assault Missile x792
-        """, language="markdown")
-
-    with st.expander("C3 Gila"):
-        st.caption("C3 Gila - 420M ISK")
-        st.code("""
-            [Gila, C3 Gila]
-            Shield Power Relay II
-            Shield Power Relay II
-            Drone Damage Amplifier II
-
-            Large Shield Extender II
-            Large Shield Extender II
-            Caldari Navy Large Shield Extender
-            Caldari Navy Large Shield Extender
-            Pithum C-Type EM Shield Amplifier
-            Pithum C-Type Thermal Shield Amplifier
-
-            Rapid Light Missile Launcher II
-            Rapid Light Missile Launcher II
-            Rapid Light Missile Launcher II
-            Rapid Light Missile Launcher II
-            Drone Link Augmentor I
-
-            Medium Core Defense Field Purger II
-            Medium Core Defense Field Purger II
-            Medium Core Defense Field Purger II
-
-            Caldari Navy Hornet x4
-            Imperial Navy Infiltrator x2
-            Caldari Navy Vespa x2
-            Federation Navy Hammerhead x2
-            Republic Fleet Valkyrie x2
-
-            Caldari Navy Scourge Light Missile x480
-        """, language="markdown")
     
     with st.expander("C3 Praxis"):
         st.caption("C3 Praxis - 415M ISK")
@@ -205,6 +133,78 @@ if fit_option == "Omega" or fit_option == "Alpha & Omega":
 
             Inferno Precision Heavy Missile x600
             Inferno Fury Heavy Missile x750
+        """, language="markdown")
+
+if fit_option == "Omega" or fit_option == "Alpha & Omega":
+    with st.expander("C3 Tengu (Fort only)"):
+        st.caption("C3 Tengu (Fort only) - 550M ISK")
+        st.code("""
+            [Tengu, C3 Tengu (Fort only)]
+            Ballistic Control System II
+            Ballistic Control System II
+            Ballistic Control System II
+
+            Republic Fleet Large Cap Battery
+            Multispectrum Shield Hardener II
+            Copasetic Compact Shield Boost Amplifier
+            Dread Guristas EM Shield Hardener
+            10MN Afterburner I
+            Dread Guristas Large Shield Booster
+            Target Painter II
+
+            Heavy Assault Missile Launcher II
+            Heavy Assault Missile Launcher II
+            Heavy Assault Missile Launcher II
+            Heavy Assault Missile Launcher II
+            Heavy Assault Missile Launcher II
+            Heavy Assault Missile Launcher II
+
+            Medium Ancillary Current Router I
+            Medium EM Shield Reinforcer II
+            Medium Capacitor Control Circuit II
+
+            Tengu Core - Augmented Graviton Reactor
+            Tengu Defensive - Amplification Node
+            Tengu Offensive - Accelerated Ejection Bay
+            Tengu Propulsion - Fuel Catalyst
+                
+            Nanite Repair Paste x200
+            Scourge Javelin Heavy Assault Missile x396
+            Scourge Rage Heavy Assault Missile x792
+        """, language="plaintext")
+
+    with st.expander("C3 Gila"):
+        st.caption("C3 Gila - 420M ISK")
+        st.code("""
+            [Gila, C3 Gila]
+            Shield Power Relay II
+            Shield Power Relay II
+            Drone Damage Amplifier II
+
+            Large Shield Extender II
+            Large Shield Extender II
+            Caldari Navy Large Shield Extender
+            Caldari Navy Large Shield Extender
+            Pithum C-Type EM Shield Amplifier
+            Pithum C-Type Thermal Shield Amplifier
+
+            Rapid Light Missile Launcher II
+            Rapid Light Missile Launcher II
+            Rapid Light Missile Launcher II
+            Rapid Light Missile Launcher II
+            Drone Link Augmentor I
+
+            Medium Core Defense Field Purger II
+            Medium Core Defense Field Purger II
+            Medium Core Defense Field Purger II
+
+            Caldari Navy Hornet x4
+            Imperial Navy Infiltrator x2
+            Caldari Navy Vespa x2
+            Federation Navy Hammerhead x2
+            Republic Fleet Valkyrie x2
+
+            Caldari Navy Scourge Light Missile x480
         """, language="markdown")
 
 st.divider()
