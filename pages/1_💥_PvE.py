@@ -292,6 +292,7 @@ elif class_option == "C5":
     with st.expander("Oruze Osobnyk"):
         st.image("combat_sites/C5/3_oruze_osobnyk.png", caption="Oruze Osobnyk")
     with st.expander("Quarantine Area"):
+        st.image('combat_sites/C5/4_Quarantine_Area_Layout.jpg')
         st.image("combat_sites/C5/4_quarantine_area.png", caption="Quarantine Area")
     st.caption("Relic sites")
     with st.expander("Forgotten Core Data Field"):
